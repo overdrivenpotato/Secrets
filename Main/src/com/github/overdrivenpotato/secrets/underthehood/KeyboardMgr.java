@@ -1,4 +1,4 @@
-package org.github.overdrivenpotato.secrets.underthehood;
+package com.github.overdrivenpotato.secrets.underthehood;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Input;
