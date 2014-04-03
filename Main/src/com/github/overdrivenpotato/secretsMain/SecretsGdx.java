@@ -5,16 +5,19 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.math.Vector2;
+import com.badlogic.gdx.maps.tiled.*;
 import com.github.overdrivenpotato.secrets.underthehood.KeyboardMgr;
 
 public class SecretsGdx extends Game {
     private Player tempPlayer;
     private KeyboardMgr keyboardMgr;
-//    private TileMap map;
+    private TiledMap map;
+    private TiledMapRenderer renderer;
 
     @Override
     public void create() {
-//        map = new TmxMapLoader().load("Main/assets/map1.tmx");
+        map = new TmxMapLoader().load("Main/assets/map1.tmx");
+//        renderer new TiledMapRenderer();
         tempPlayer = new Player(new Texture("Main/assets/player.png"), 16 ,16);
         tempPlayer.setPosition(100, 100);
         keyboardMgr = new KeyboardMgr();
@@ -24,7 +27,7 @@ public class SecretsGdx extends Game {
     public void render() {
         Gdx.graphics.getGL20().glClearColor(0.1f, 0.1f, 0.1f, 1);
         Gdx.graphics.getGL20().glClear( GL20.GL_COLOR_BUFFER_BIT | GL20.GL_DEPTH_BUFFER_BIT );
-
+        renderer.render();
         super.render();
 
         tempPlayer.draw();
