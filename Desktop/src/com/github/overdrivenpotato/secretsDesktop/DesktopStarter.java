@@ -2,7 +2,7 @@ package com.github.overdrivenpotato.secretsDesktop;
 
 import com.badlogic.gdx.backends.lwjgl.LwjglApplication;
 import com.badlogic.gdx.backends.lwjgl.LwjglApplicationConfiguration;
-import com.github.overdrivenpotato.secretsMain.SecretsGdx;
+import com.github.overdrivenpotato.secrets.SecretsGdx;
 
 /**
  * Created by Marko on 1/16/14.
